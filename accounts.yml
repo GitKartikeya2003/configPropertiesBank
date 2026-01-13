@@ -1,0 +1,10 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to Bank accounts related local APIs "
+  contactDetails:
+    name: "Kartikeya Gupta - Developer"
+    email: "kartikeyayash4@gmail.com"
+  onCallSupport:
+    - 8707336016
