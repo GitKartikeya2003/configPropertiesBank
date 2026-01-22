@@ -1,0 +1,12 @@
+server:
+  port: 8070
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetchRegistry: false  #Since my eureka server is not going to call any microservices whereas
+                          #in individual microservices like accounts,loans etc this value should be true
+    registerWithEureka: false #this is to so that eureka doesnt register itself and dont expose details
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    #where eureka server will be exposed and show its functionalities or to discover other service details
